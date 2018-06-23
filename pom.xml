@@ -151,4 +151,12 @@
         </plugins>
     </build>
 
+	<!--	restante	omitido...	-->
+	<developers>
+					<developer>
+									<name>Vinicius Belisario</name>
+									<email>vinicius-belisario@hotmail.com</email>
+					</developer>
+	</developers>
+
 </project>
