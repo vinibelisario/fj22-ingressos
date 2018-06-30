@@ -44,6 +44,6 @@ public class SessaoController {
 		if (result.hasErrors()) return form(form.getSalaId(), form);
 		Sessao sessao = form.toSessao(salaDao, filmeDao);
 		sessaoDao.save(sessao);
-		return new ModelAndView("redirect:/admin/sala" + form.getSalaId() + "/sessoes");
+		return new ModelAndView("redirect:/admin/sala/" + form.getSalaId() + "/sessoes");
 	}
 }
