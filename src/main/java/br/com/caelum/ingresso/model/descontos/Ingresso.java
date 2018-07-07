@@ -50,7 +50,7 @@ public class Ingresso {
 	public Ingresso() {
 	}
 
-	public Ingresso(Sessao sessao, TipoDeIngresso tipoeIngresso, Lugar lugar) {
+	public Ingresso(Sessao sessao, TipoDeIngresso tipoDeIngresso, Lugar lugar) {
 		this.sessao = sessao;
 		this.preco = tipoDeIngresso.aplicaDesconto(sessao.getPreco());
 		this.tipoDeIngresso = tipoDeIngresso;

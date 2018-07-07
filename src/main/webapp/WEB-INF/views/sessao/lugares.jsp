@@ -11,11 +11,15 @@
 <%@ taglib tagdir="/WEB-INF/tags/" prefix="ingresso" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+
 <ingresso:template>
 	<jsp:attribute name="compra_css">
 		<link rel="stylesheet" href="/assets/css/compra.css" />
     </jsp:attribute>
     <jsp:body>
+		<svg	class="assento	${sessao.isDisponivel(lugar)	?	"disponivel"	:	"ocupado"}"	onclick="${sessao.i
+		sDisponivel(lugar)	?	'changeCheckbox(this)'	:	''	}"	...
+			>
     	<div class="container-compra">
     	
 		<div class="sidenav">

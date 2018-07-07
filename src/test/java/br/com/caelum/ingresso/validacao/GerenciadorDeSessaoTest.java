@@ -26,9 +26,9 @@ public class GerenciadorDeSessaoTest {
 		this.rogueOne = new Filme("Rogue One", Duration.ofMinutes(120),	"SCI-FI", BigDecimal.ONE);
 		this.sala3D = new Sala("Sala3D", BigDecimal.TEN);
 		
-		this.sessaoDasDez = new Sessao(LocalTime.parse("10:00:00"), rogueOne, sala3D, BigDecimal.TEN);
-		this.sessaoDasTreze = new Sessao(LocalTime.parse("13:00:00"), rogueOne, sala3D, BigDecimal.TEN);
-		this.sessaoDasDezoito = new Sessao(LocalTime.parse("18:00:00"), rogueOne, sala3D, BigDecimal.TEN);
+		this.sessaoDasDez = new Sessao(LocalTime.parse("10:00:00"), rogueOne, sala3D);
+		this.sessaoDasTreze = new Sessao(LocalTime.parse("13:00:00"), rogueOne, sala3D);
+		this.sessaoDasDezoito = new Sessao(LocalTime.parse("18:00:00"), rogueOne, sala3D);
 	}
 	
 	@Test
