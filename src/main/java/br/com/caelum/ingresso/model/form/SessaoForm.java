@@ -1,5 +1,6 @@
 package br.com.caelum.ingresso.model.form;
 
+import java.math.BigDecimal;
 import java.time.LocalTime;
 
 import javax.validation.constraints.NotNull;
@@ -34,6 +35,7 @@ public class SessaoForm {
 	public Sessao toSessao(SalaDao salaDao, FilmeDao filmeDao){
 		Sala sala = salaDao.findOne(salaId);
 		Filme filme = filmeDao.findOne(filmeId);
+		BigDecimal preco = BigDecimal.TEN;
 		Sessao sessao = new Sessao(this.horario, filme, sala);
 		return sessao;
 	}
